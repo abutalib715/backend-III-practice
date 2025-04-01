@@ -11,7 +11,7 @@
 //UploadController ->UploadValidator ->UploadService ->SearchJob ->SearchCompletedEvent ->StoreToDbJob->SearchResult
 
 
-public class AuthCotroller() {
+public class AuthCotroller {
     login(LoginRequestValidator loginRequestValidator) {
     }
 
@@ -20,7 +20,7 @@ public class AuthCotroller() {
 }
 
 
-public class AuthService() {
+public class AuthService {
     login() {
     }
 
@@ -28,26 +28,26 @@ public class AuthService() {
     }
 }
 
-public class LoginRequestValidator() {
+public class LoginRequestValidator {
     public validate()
 }
 
-public class LogoutRequestValidator() {
+public class LogoutRequestValidator {
     public validate()
 }
 
-public class User() {
+public class User {
     // ser entity here
 }
 
 
 
-public class UploadController() {
+public class UploadController {
     uploadFile(UploadValidator uploadValidator) {
     }
 }
 
-public class UploadService() {
+public class UploadService {
     uploadFile() {
     }
 
@@ -58,7 +58,7 @@ public class UploadService() {
     }
 }
 
-public class SearchJob() {
+public class SearchJob {
     private final ApplicationEventPublisher eventPublisher;
 
     searchJob() {
@@ -68,20 +68,20 @@ public class SearchJob() {
     }
 }
 
-public class SearchCompletedEvent() extends ApplicationEvent {
+public class SearchCompletedEvent extends ApplicationEvent {
     public SearchCompletedEvent(Object source) {
         super(source);
     }
 }
 
-public class SearchCompletedEventListner() {
+public class SearchCompletedEventListner {
     @EventListner
     handleSearchCompletedEvent() {
         // STORE RESULT TO DB
     }
 }
 
-public class SearchResult() {
+public class SearchResult {
     // ser entity here
 }
 
